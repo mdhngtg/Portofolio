@@ -10,8 +10,6 @@ body{
   color:white;
 }
 
-/* HEADER */
-
 header{
   height:100vh;
   background:url('IMG-20260529-WA0009.jpg') center/cover no-repeat;
@@ -38,8 +36,6 @@ header p{
   color:#d1d5db;
 }
 
-/* NAVBAR */
-
 nav{
   background:#111827;
   padding:15px;
@@ -61,13 +57,9 @@ nav a:hover{
   color:#38bdf8;
 }
 
-/* SECTION */
-
 section{
   padding:80px 10%;
 }
-
-/* ABOUT */
 
 .about{
   display:flex;
@@ -94,15 +86,13 @@ section{
 .about-text h2{
   font-size:40px;
   margin-bottom:15px;
-  color:#38bdf8;
+  color:#d1d5db;
 }
 
 .about-text p{
   color:#d1d5db;
   line-height:30px;
 }
-
-/* DATA DIRI */
 
 .data-diri{
   background:#1e293b;
@@ -116,7 +106,7 @@ section{
   text-align:center;
   font-size:40px;
   margin-bottom:25px;
-  color:#38bdf8;
+  color:#d1d5db;
 }
 
 .isi-data{
@@ -141,13 +131,11 @@ section{
   font-weight:bold;
 }
 
-/* SKILLS */
-
 .skills h2{
   text-align:center;
   margin-bottom:40px;
   font-size:40px;
-  color:#38bdf8;
+  color:#d1d5db;
 }
 
 .skill{
@@ -194,13 +182,11 @@ section{
   background:#f59e0b;
 }
 
-/* PENGALAMAN */
-
 .pengalaman h2{
   text-align:center;
   margin-bottom:40px;
   font-size:40px;
-  color:#38bdf8;
+  color:#d1d5db;
 }
 
 .pengalaman-box{
@@ -215,7 +201,7 @@ section{
 }
 
 .pengalaman-box h3{
-  color:#38bdf8;
+  color:#d1d5db;
   margin-bottom:15px;
   font-size:28px;
 }
@@ -232,13 +218,11 @@ section{
   line-height:30px;
 }
 
-/* SEKOLAH */
-
 .gambar h2{
   text-align:center;
   margin-bottom:40px;
   font-size:40px;
-  color:#38bdf8;
+  color:#d1d5db;
 }
 
 .grid{
@@ -269,8 +253,6 @@ section{
   text-align:center;
 }
 
-/* FOOTER */
-
 footer{
   text-align:center;
   padding:25px;
@@ -281,8 +263,6 @@ footer{
 footer p{
   color:#d1d5db;
 }
-
-/* RESPONSIVE */
 
 @media(max-width:768px){
 
