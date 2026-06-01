@@ -25,6 +25,7 @@ header{
 }
 
 header .atas{
+  backdrop-filter:blur(7px);
   background:rgba(0,0,0,0.6);
   padding:40px;
   border-radius:20px;
