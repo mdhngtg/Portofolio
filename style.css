@@ -188,14 +188,29 @@ section{
   background:#427911;
 }
 
+.php{
+    width: 30%;
+    background: rgb(128, 12, 12);
+}
+
+.vb{
+    width: 50%;
+    background: rgb(231, 8, 8);
+}
+
 .cpp{
   width:35%;
   background:#22c55e;
 }
 
 .python{
-  width:10%;
+  width:20%;
   background:#f59e0b;
+}
+
+.kotlin{
+  width:15%;
+  background:#65558e;
 }
 
 .pengalaman h2{
