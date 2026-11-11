@@ -1,37 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Madhan</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
+  <div class="loader">
+    <div class="loader-circle"></div>
+    <p>Loading Portfolio...</p>
+  </div>
+
+  <header id="home">
     <div class="atas">
+      <span class="welcome">WELCOME TO MY PORTFOLIO</span>
       <h1>Portofolio Madhan</h1>
-      <p>| Pelajar SMKN 9 MEDAN |</p>
+      <p>I'm a <span class="typing"></span></p>
+      <a href="#about" class="hero-btn">Explore Portfolio ↓</a>
     </div>
+    <div class="scroll-indicator">SCROLL DOWN</div>
   </header>
 
   <nav>
-    <a href="#about">Tentang Saya</a>
-    <a href="#data">Data Diri</a>
-    <a href="#keahlian">Keahlian</a>
-    <a href="#pengalaman">Pengalaman</a>
-    <a href="#sekolah">Sekolah</a>
-    <a href="#contact">Kontak</a>
+    <div class="nav-logo">MDHNGTG<span>.</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#data">Data Diri</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#sekolah">Sekolah</a>
+      <a href="#contact">Kontak</a>
+    </div>
   </nav>
 
-  <section id="about">
+  <section id="about" class="reveal">
     <div class="about">
-      <img src="ganteng.png" alt="foto profil">
+      <div class="profile-wrapper">
+        <div class="profile-glow"></div>
+        <img src="ganteng.png" alt="Foto profil Madhan">
+      </div>
+
       <div class="about-text">
-
+        <span class="section-tag">INTRODUCTION</span>
         <h2>Tentang Saya</h2>
-
         <p>
           Perkenalkan, saya Isam Ramadhan,
           seorang pelajar SMKN 9 MEDAN jurusan
@@ -40,147 +55,112 @@
         <br>
         <p>
           Saya memiliki minat dalam dunia programming,
-          seperti menyusun struktur logkika melalui
-          Python, Kotlin, PHP, CPP, dan yang paling saya
+          seperti menyusun struktur logika melalui
+          Python, Kotlin, PHP, C++, dan yang paling saya
           minati dalam dunia teknologi Rekayasa Perangkat Lunak
           adalah Web Development yang menggunakan
           HTML dan CSS sebagai landasan website saya.
         </p>
-
       </div>
     </div>
   </section>
-  
-  <section id="data">
+
+  <section id="data" class="reveal">
     <div class="data-diri">
+      <span class="section-tag">PERSONAL INFORMATION</span>
       <h2>Data Diri</h2>
       <div class="isi-data">
         <p><span>Nama</span> : Isam Ramadhan</p>
-
-         <p><span>Kelas</span> : XI RPL 4</p>
-
-        <p><span>Sekolah</span>
-        : SMKN 9 MEDAN</p>
-
-        <p><span>Jurusan</span>
-        : Rekayasa Perangkat Lunak</p>
+        <p><span>Kelas</span> : XI RPL 4</p>
+        <p><span>Sekolah</span> : SMKN 9 MEDAN</p>
+        <p><span>Jurusan</span> : Rekayasa Perangkat Lunak</p>
       </div>
     </div>
   </section>
 
-  <section class="skills" id="keahlian">
+  <section class="skills reveal" id="keahlian">
+    <span class="section-tag">MY SKILLS</span>
     <h2>Keahlian Programming Saya</h2>
-    
-    <div class="skill">
 
+    <div class="skill">
       <div class="skill-name">
         <span>Web Developer (HTML)</span>
         <span>75%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar html">
-          75%
-        </div>
+        <div class="progress-bar html" data-width="75%"></div>
       </div>
     </div>
-    
-  <div class="skill">
-    
+
+    <div class="skill">
       <div class="skill-name">
-        <span>Web Designer (css)</span>
+        <span>Web Designer (CSS)</span>
         <span>70%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar css">
-          70%
-        </div>
+        <div class="progress-bar css" data-width="70%"></div>
       </div>
     </div>
-  </div>
 
-   <div class="skill">
-    
+    <div class="skill">
       <div class="skill-name">
         <span>VB.NET</span>
         <span>50%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar vb">
-          50%
-        </div>
+        <div class="progress-bar vb" data-width="50%"></div>
       </div>
     </div>
-  </div>
-
 
     <div class="skill">
-
       <div class="skill-name">
         <span>C++</span>
         <span>35%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar cpp">
-          35%
-        </div>
+        <div class="progress-bar cpp" data-width="35%"></div>
       </div>
     </div>
 
     <div class="skill">
-    
       <div class="skill-name">
         <span>PHP</span>
         <span>30%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar php">
-          30%
-        </div>
+        <div class="progress-bar php" data-width="30%"></div>
       </div>
     </div>
-  </div>
-    
-    <div class="skill">
 
+    <div class="skill">
       <div class="skill-name">
         <span>Python</span>
         <span>20%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar python">
-          20%
-        </div>
+        <div class="progress-bar python" data-width="20%"></div>
       </div>
     </div>
 
     <div class="skill">
-
       <div class="skill-name">
-        <span>kotlin</span>
+        <span>Kotlin</span>
         <span>15%</span>
       </div>
-
       <div class="progress">
-        <div class="progress-bar kotlin">
-          15%
-        </div>
+        <div class="progress-bar kotlin" data-width="15%"></div>
       </div>
     </div>
   </section>
 
-  <section class="pengalaman" id="pengalaman">
+  <section class="pengalaman reveal" id="pengalaman">
+    <span class="section-tag">MY JOURNEY</span>
     <h2>Project / Pengalaman</h2>
+
     <div class="pengalaman-box">
       <h3>Yang Sedang Saya Pelajari</h3>
-
       <ul>
-        <li>Membuat UI ( UI Designer / Front End )</li>
+        <li>Membuat UI (UI Designer / Front End)</li>
         <li>Membuat Program Logika C++</li>
         <li>Membuat form melalui VB.NET</li>
         <li>Menekankan struktur logika pada PHP</li>
@@ -189,29 +169,42 @@
     </div>
   </section>
 
-  <section class="gambar" id="sekolah">
-
+  <section class="gambar reveal" id="sekolah">
+    <span class="section-tag">EDUCATION</span>
     <h2>Jejak Sekolah Saya</h2>
 
     <div class="grid">
       <div class="card">
-        <img src="MTSSSA.jpg" alt="">
-        <h3>MTs Miftahussalam MEDAN</h3>
+        <img src="MTSSSA.jpg" alt="MTs Miftahussalam">
+        <div class="card-info">
+          <h3>MTs Miftahussalam MEDAN</h3>
+          <p>Previous School</p>
+        </div>
       </div>
-      
+
       <div class="card">
-        <img src="IMG-20260530-WA0059.jpg" alt="">
-        <h3>SMKN 9 MEDAN (SEKARANG)</h3>
+        <img src="IMG-20260530-WA0059.jpg" alt="SMKN 9 Medan">
+        <div class="card-info">
+          <h3>SMKN 9 MEDAN</h3>
+          <p>Current School</p>
+        </div>
       </div>
     </div>
   </section>
 
   <footer id="contact">
-    <p>
-      Portfolio Madhan ||
+    <h2>Let's Connect</h2>
+    <p>Portfolio Madhan</p>
+    <a href="https://instagram.com/mdhngtg_" target="_blank">
       Instagram : @mdhngtg_
+    </a>
+    <p class="copyright">
+      © 2026 Isam Ramadhan. All Rights Reserved.
     </p>
   </footer>
 
+  <button id="backTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
