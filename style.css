@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +20,6 @@ body {
   background: #38bdf8;
   color: #0D1117;
 }
-
-/* LOADING */
 
 .loader {
   position: fixed;
@@ -62,8 +59,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
-/* HEADER */
 
 header {
   height: 100vh;
@@ -188,8 +183,6 @@ header p {
   }
 }
 
-/* NAVBAR */
-
 nav {
   background: rgba(13,17,23,0.94);
   backdrop-filter: blur(15px);
@@ -248,8 +241,6 @@ nav a.active::after {
   width: 100%;
 }
 
-/* SECTION */
-
 section {
   padding: 100px 10%;
 }
@@ -268,8 +259,6 @@ section h2 {
   margin-bottom: 30px;
 }
 
-/* REVEAL */
-
 .reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -280,8 +269,6 @@ section h2 {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ABOUT */
 
 .about {
   display: flex;
@@ -334,9 +321,6 @@ section h2 {
   color: #d1d5db;
   line-height: 30px;
 }
-
-/* DATA DIRI */
-
 .data-diri {
   background: #24272d;
   padding: 40px;
@@ -372,8 +356,6 @@ section h2 {
   color: #38bdf8;
   font-weight: bold;
 }
-
-/* SKILLS */
 
 .skills h2,
 .pengalaman h2,
@@ -462,8 +444,6 @@ section h2 {
   color: #65558e;
 }
 
-/* PENGALAMAN */
-
 .pengalaman-box {
   background: #24272d;
   padding: 40px;
@@ -498,8 +478,6 @@ section h2 {
   color: #38bdf8;
   transform: translateX(7px);
 }
-
-/* SEKOLAH */
 
 .grid {
   display: grid;
@@ -551,8 +529,6 @@ section h2 {
   letter-spacing: 2px;
 }
 
-/* FOOTER */
-
 footer {
   text-align: center;
   padding: 55px 20px;
@@ -585,8 +561,6 @@ footer .copyright {
   color: #64748b;
 }
 
-/* BACK TO TOP */
-
 #backTop {
   position: fixed;
   bottom: 25px;
@@ -616,8 +590,6 @@ footer .copyright {
   box-shadow: 0 0 20px #38bdf8;
   transform: translateY(-5px);
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
   header {
@@ -692,5 +664,62 @@ footer .copyright {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 155px;
+  padding: 13px 25px;
+  border: 1px solid #38bdf8;
+  border-radius: 12px;
+  color: #38bdf8;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.35s ease;
+}
+
+.contact-btn span {
+  font-size: 20px;
+}
+
+.contact-btn:hover {
+  background: #38bdf8;
+  color: #0D1117;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(56,189,248,0.3);
+}
+
+.github {
+  border-color: #aaa;
+  color: white;
+}
+
+.github:hover {
+  background: white;
+  color: #0D1117;
+  border-color: white;
+}
+
+@media (max-width: 480px) {
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 200px;
   }
 }
