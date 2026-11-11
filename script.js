@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
 });
 
 const typing = document.querySelector(".typing");
-
 const words = [
   "Web Developer",
   "Programmer",
@@ -19,9 +18,7 @@ let deleting = false;
 
 function typeEffect() {
   const currentWord = words[wordIndex];
-
   typing.textContent = currentWord.substring(0, charIndex);
-
   if (!deleting && charIndex < currentWord.length) {
     charIndex++;
     setTimeout(typeEffect, 100);
@@ -30,19 +27,15 @@ function typeEffect() {
     setTimeout(typeEffect, 50);
   } else {
     deleting = !deleting;
-
     if (!deleting) {
       wordIndex = (wordIndex + 1) % words.length;
     }
-
     setTimeout(typeEffect, deleting ? 1200 : 300);
   }
 }
 
 typeEffect();
-
 const reveals = document.querySelectorAll(".reveal");
-
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -80,11 +73,9 @@ const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "";
-
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 150;
     const sectionBottom = sectionTop + section.offsetHeight;
-
     if (
       window.scrollY >= sectionTop &&
       window.scrollY < sectionBottom
@@ -95,7 +86,6 @@ window.addEventListener("scroll", () => {
 
   navLinks.forEach(link => {
     link.classList.remove("active");
-
     if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
     }
@@ -103,7 +93,6 @@ window.addEventListener("scroll", () => {
 });
 
 const backTop = document.getElementById("backTop");
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > 400) {
     backTop.classList.add("show");
