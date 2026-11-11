@@ -1,14 +1,8 @@
-
-// LOADING SCREEN
-
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".loader").classList.add("hide");
   }, 700);
 });
-
-
-// TYPING ANIMATION
 
 const typing = document.querySelector(".typing");
 
@@ -47,9 +41,6 @@ function typeEffect() {
 
 typeEffect();
 
-
-// SCROLL REVEAL
-
 const reveals = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -67,9 +58,6 @@ reveals.forEach(item => {
   revealObserver.observe(item);
 });
 
-
-// SKILL BAR ANIMATION
-
 const skillBars = document.querySelectorAll(".progress-bar");
 
 const skillObserver = new IntersectionObserver((entries) => {
@@ -86,9 +74,6 @@ const skillObserver = new IntersectionObserver((entries) => {
 skillBars.forEach(bar => {
   skillObserver.observe(bar);
 });
-
-
-// NAVBAR ACTIVE SECTION
 
 const sections = document.querySelectorAll("header, section, footer");
 const navLinks = document.querySelectorAll(".nav-links a");
@@ -116,9 +101,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-
-// BACK TO TOP
 
 const backTop = document.getElementById("backTop");
 
